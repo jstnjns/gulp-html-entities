@@ -3,10 +3,7 @@
   "description": "Encode or decode HTML entities",
   "version": "0.0.1",
   "homepage": "https://github.com/jstnjns/gulp-html-entities",
-  "author": {
-    "name": "Justin Jones",
-    "url": "http://www.jstnjns.com/"
-  },
+  "author": "Justin Jones (http://www.jstnjns.com/)",
   "repository": {
     "type": "git",
     "url": "git://github.com/jstnjns/gulp-html-entities.git"
