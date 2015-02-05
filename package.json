@@ -1,0 +1,36 @@
+{
+  "name": "gulp-html-entities",
+  "description": "Encode or decode HTML entities",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jstnjns/gulp-html-entities",
+  "author": {
+    "name": "Justin Jones",
+    "url": "http://www.jstnjns.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jstnjns/gulp-html-entities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jstnjns/gulp-html-entities/issues"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "html",
+    "entities"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.3",
+    "html-entities": "^1.1.2",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-rename": "^1.2.0"
+  }
+}
