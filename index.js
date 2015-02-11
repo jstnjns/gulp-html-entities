@@ -1,4 +1,3 @@
-
 var through     = require('through2'),
     util        = require('gulp-util'),
     entities    = require('html-entities');
@@ -10,10 +9,14 @@ module.exports = function(method, options) {
 
   return through.obj(function(file, encoding, done) {
 
-    var processed = html[method](file.contents.toString()),
-        buffer = new Buffer(processed);
+    var processed, buffer;
 
-    file.contents = buffer;
+    if(file.contents instanceof Buffer) {
+      processed = html[method](file.contents.toString()),
+      buffer = new Buffer(processed);
+
+      file.contents = buffer;
+    }
 
     this.push(file);
     return done();
