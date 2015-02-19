@@ -12,6 +12,10 @@ gulp.task('encode', function() {
     .pipe(gulp.dest('./output/'));
 });
 ```
+####Methods
++ *encode* — encodes, replacing characters to its entity representations. Ignores UTF characters with no entity representation.
++ *encodeNonUTF* — encodes, replacing characters to its entity representations. Inserts numeric entities for UTF characters.
++ *encodeNonASCII* — encodes, replacing only non-ASCII characters to its numeric entity representations.
 
 ## Decode
 
@@ -23,3 +27,5 @@ gulp.task('decode', function() {
     .pipe(gulp.dest('./output'));
 });
 ```
+#### Methods
++ *decode* — decodes, replacing entities to characters. Unknown entities are left as is.
